@@ -16,7 +16,7 @@ const QrCodeGenerator = () => {
     localStorage.setItem(
       GENERATE_DATA,
       JSON.stringify([...prevDate, value])
-      // jonny
+    
     );
 
     setResult(value);
