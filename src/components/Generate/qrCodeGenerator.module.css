@@ -1,0 +1,40 @@
+.QR {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.9rem;
+  font-family: Arial, sans-serif;
+}
+
+input {
+    margin-top: 4rem;
+  border: 7px solid steelblue;
+  width: 240px;
+  height: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  box-shadow: 2px 1px 22px 0px rgb(28, 153, 255);
+}
+
+button {
+  background-color: steelblue;
+  border-style: none;
+  width: 15rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+.QRcode {
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.QRcode svg {
+  width: 240px;  /* Установи желаемую ширину */
+  height: 240px; /* Установи желаемую высоту */
+  display: block; /* Убирает лишние отступы, которые могут быть у SVG */
+}
