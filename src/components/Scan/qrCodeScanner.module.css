@@ -1,6 +1,3 @@
-/* src/qrCodeScanner.css */
-
-/* 1. Главный контейнер, центрирующий сканер */
 .scanner-container {
     display: flex;
     flex-direction: column;
@@ -9,37 +6,35 @@
     padding: 30px;
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     max-width: 450px;
-    margin: 40px auto; /* Центрирует контейнер на странице */
+    margin: 40px auto; 
     font-family: Arial, sans-serif;
 }
 
 .scanner-container h2 {
     color: #2c3e50;
     margin-bottom: 25px;
+    font-size: 1.8rem;
 }
 
-/* 2. Блок, в котором находится сам сканер (для контроля размера и рамки) */
 .scanner-box {
-    /* Фиксированный размер для области сканирования */
     width: 300px; 
     height: 300px;
-    border: 5px solid steelblue; /* Рамка, как в других твоих стилях */
-    border-radius: 8px;
+    border: 5px solid #3498db;
+    border-radius: 10px;
     overflow: hidden; 
     margin-bottom: 20px;
 }
 
-/* 3. Стиль для результата (ссылки) */
 .scan-result-link {
     font-size: 1rem;
-    color: steelblue;
-    word-break: break-all; /* Перенос длинных ссылок */
+    color: #3498db;
+    word-break: break-all; 
     text-align: center;
     padding: 10px 15px;
-    background-color: #f7f7f7;
-    border: 1px solid #e0e0e0;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
     border-radius: 5px;
     text-decoration: none;
     transition: all 0.2s;
@@ -48,10 +43,9 @@
 
 .scan-result-link:hover {
     background-color: #e0e0e0;
-    color: #1a4d79;
+    color: #2980b9;
 }
 
-/* 4. Стиль для сообщения об ожидании */
 .no-result {
     color: #95a5a6;
     font-style: italic;

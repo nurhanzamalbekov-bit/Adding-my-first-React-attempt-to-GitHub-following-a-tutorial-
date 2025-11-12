@@ -13,11 +13,7 @@ const QrCodeGenerator = () => {
   const onClickHafnler = (result) => {
     const prevDate = JSON.parse(localStorage.getItem(GENERATE_DATA) || "[]");
 
-    localStorage.setItem(
-      GENERATE_DATA,
-      JSON.stringify([...prevDate, value])
-    
-    );
+    localStorage.setItem(GENERATE_DATA, JSON.stringify([...prevDate, value]));
 
     setResult(value);
     setValue("");

@@ -2,39 +2,59 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.9rem;
+  gap: 1.5rem;
   font-family: Arial, sans-serif;
+  margin-top: 3rem;
 }
 
-input {
-    margin-top: 4rem;
-  border: 7px solid steelblue;
-  width: 240px;
-  height: 1rem;
+.QR input {
+  margin-top: 0;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  width: 280px;
+  height: 1.5rem; 
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input:focus {
-  box-shadow: 2px 1px 22px 0px rgb(28, 153, 255);
+.QR input:focus {
+  outline: none;
+  border-color: #2980b9; 
+  box-shadow: 0 0 10px rgba(41, 128, 185, 0.5);
 }
 
-button {
-  background-color: steelblue;
+.QR button {
+  background-color: #3498db;
+  color: white;
   border-style: none;
-  width: 15rem;
-  padding: 1rem;
-  font-size: 1.5rem;
+  border-radius: 8px;
+  width: 17rem;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.QR button:hover {
+  background-color: #2980b9;
+}
+
+.QR button:active {
+  transform: scale(0.98);
 }
 
 .QRcode {
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .QRcode svg {
-  width: 240px;  /* Установи желаемую ширину */
-  height: 240px; /* Установи желаемую высоту */
-  display: block; /* Убирает лишние отступы, которые могут быть у SVG */
+  width: 240px; 
+  height: 240px; 
+  display: block;
 }

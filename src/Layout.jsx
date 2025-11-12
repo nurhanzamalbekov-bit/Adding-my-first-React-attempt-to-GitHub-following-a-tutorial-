@@ -1,9 +1,7 @@
-import { QrCodeGenerator } from "./components/Generate/QrCodeGenerator";
-import { QrCodeScanner } from "./components/Scan/QrCodeScanner";
 import { Navgigation } from "./components/Navigation/Navgigation";
 import { Routes, Route } from "react-router-dom";
-import { GenerateHistory } from "./components/GenerateHistory/GenerateHistory";
-import { ScanHistory } from "./components/ScanHistory/ScanHistory";
+import { GeneratePage } from "./GeneratePage/GeneratePage";
+import { ScanPage } from "./ScanPage/ScanPage"; 
 const Layout = () => {
 
   return (
@@ -11,10 +9,8 @@ const Layout = () => {
       <Navgigation />
 
       <Routes>
-        <Route path="/generate" element={<QrCodeGenerator />} />
-        <Route path="/scan" element={<QrCodeScanner />} />
-        <Route path="/scanHistory" element={<ScanHistory/>} />
-        <Route path="/generateHistory" element={<GenerateHistory/>} />
+        <Route path="/generate" element={<GeneratePage />}/>
+        <Route path="/scan" element={<ScanPage/>} />
       </Routes>
     </div>
   );
